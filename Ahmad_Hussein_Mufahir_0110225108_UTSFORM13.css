@@ -1,0 +1,147 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        nav {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav > div {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        nav input[type="search"] {
+            padding: 8px 15px;
+            border: none;
+            width: 300px;
+            border-radius: 3px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .radio-options {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .radio-options label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-options input[type="radio"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .file-wrapper {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .file-wrapper input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer button {
+            background: #27ae60;
+            padding: 12px 40px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            nav > div {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav input[type="search"] {
+                width: 100%;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }

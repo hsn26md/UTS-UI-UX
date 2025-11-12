@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTSFORM13</title>
+    <link rel="stylesheet" href="Ahmad_Hussein_Mufahir_0110225108_UTSFORM13.css">
+</head>
+<body>
+ <nav>
+        <div>
+            <h1>Cari Sivitas Akademika</h1>
+            <input type="search" placeholder="🔍 Cari data...">
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Data Pribadi</h2>
+            <div class="grid-2">
+                <fieldset>
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Nama Mahasiswa / Dosen">
+                </fieldset>
+                <fieldset>
+                    <label for="prodi">Asal Prodi</label>
+                    <input type="text" id="prodi" placeholder="Asal Prodi">
+                </fieldset>
+            </div>
+            <fieldset>
+                <label for="status">Status</label>
+                <select id="status">
+                    <option value="">Pilih Status</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="dosen">Dosen</option>
+                </select>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Data Kendaraan</h2>
+            <fieldset>
+                <legend>Jenis Kendaraan</legend>
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" id="motor" name="kendaraan" value="motor" checked>
+                        Motor
+                    </label>
+                    <label>
+                        <input type="radio" id="mobil" name="kendaraan" value="mobil">
+                        Mobil
+                    </label>
+                </div>
+            </fieldset>
+            <div class="grid-2">
+                <fieldset>
+                    <label for="nopol">Nomor Polisi</label>
+                    <input type="text" id="nopol" placeholder="Contoh: B 1234 XYZ">
+                </fieldset>
+                <fieldset>
+                    <label for="merk">Merk Kendaraan</label>
+                    <input type="text" id="merk" placeholder="Contoh: Honda, Toyota">
+                </fieldset>
+            </div>
+        </section>
+
+        <section>
+            <h2>Upload Dokumen</h2>
+            <fieldset>
+                <label for="stnk">Upload STNK</label>
+                <div class="file-wrapper">
+                    <input type="text" id="stnk" placeholder="Pilih file..." readonly>
+                    <button type="button">Browse</button>
+                </div>
+            </fieldset>
+        </section>
+
+        <section>
+            <footer>
+                <button type="submit">Daftar</button>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
